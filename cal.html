@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="calculator">
+        <label for="display" class="visually-hidden">Calculator display</label>
+        <input id="display" readonly aria-label="Calculator display">
+        <div class="keys">
+            <button onclick="appendtodisplay('+')" aria-label="Add">+</button>
+            <button onclick="appendtodisplay('7')" aria-label="Seven">7</button>
+            <button onclick="appendtodisplay('8')" aria-label="Eight">8</button>
+            <button onclick="appendtodisplay('9')" aria-label="Nine">9</button>
+            <button onclick="appendtodisplay('-')" aria-label="Subtract">-</button>
+            <button onclick="appendtodisplay('4')" aria-label="Four">4</button>
+            <button onclick="appendtodisplay('5')" aria-label="Five">5</button>
+            <button onclick="appendtodisplay('6')" aria-label="Six">6</button>
+            <button onclick="appendtodisplay('*')" aria-label="Multiply">*</button>
+            <button onclick="appendtodisplay('1')" aria-label="One">1</button>
+            <button onclick="appendtodisplay('2')" aria-label="Two">2</button>
+            <button onclick="appendtodisplay('3')" aria-label="Three">3</button>
+            <button onclick="appendtodisplay('/')" aria-label="Divide">/</button>
+            <button onclick="appendtodisplay('0')" aria-label="Zero">0</button>
+            <button onclick="appendtodisplay('.')" aria-label="Decimal">.</button>
+            <button onclick="backspace()" aria-label="Backspace">←</button>
+            <button onclick="clearDisplay()" aria-label="Clear">C</button>
+            <button onclick="calculate()" aria-label="Equals">=</button>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
